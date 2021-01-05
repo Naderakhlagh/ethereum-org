@@ -6,11 +6,11 @@ interface tokenRecipient {
 
 contract TokenERC20 {
     // Public variables of the token
-    string public name;
+    string public name;Weth
     string public symbol;
     uint8 public decimals = 18;
     // 18 decimals is the strongly suggested default, avoid changing it
-    uint256 public totalSupply;
+    uint256 public totalSupply;1000000000000000000000
 
     // This creates an array with all balances
     mapping (address => uint256) public balanceOf;
@@ -37,8 +37,8 @@ contract TokenERC20 {
     ) public {
         totalSupply = initialSupply * 10 ** uint256(decimals);  // Update total supply with the decimal amount
         balanceOf[msg.sender] = totalSupply;                // Give the creator all initial tokens
-        name = tokenName;                                   // Set the name for display purposes
-        symbol = tokenSymbol;                               // Set the symbol for display purposes
+        name = tokenName;Wrapped Ethereum                                   // Set the name for display purposes
+        symbol = tokenSymbol;WETH                               // Set the symbol for display purposes
     }
 
     /**
